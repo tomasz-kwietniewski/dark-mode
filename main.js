@@ -1,8 +1,8 @@
 console.log('hello test')
 
-const darkMode = document.querySelector('.button-js');
+const change = document.querySelector('.body--js');
 
-darkMode.addEventListener('click', () => {
-  const change = document.querySelector('.body');
-  change.classList.toggle('body--js')
+change.addEventListener('click', () => {
+  const darkMode = document.querySelector('.body');
+  darkMode.classList.toggle('body--dark')
 })
