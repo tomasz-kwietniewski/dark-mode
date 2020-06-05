@@ -1,4 +1,13 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
 .body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+/*.body {
     background-color: white;
     color: black;
 }
@@ -6,4 +15,4 @@
 .body--dark {
     background-color: black;
     color: white;
-}
+}*/
