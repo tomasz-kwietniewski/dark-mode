@@ -4,12 +4,14 @@ let isDark = false;
 
 const change = document.querySelector(".body--js");
 change.addEventListener("click", () => {
-  if ((isDark = false)) {
-    document.documentElement.style.setProperty("--background-color", "white"),
-      document.documentElement.style.setProperty("--text-color", "black");
+  if (isDark) {
+    document.documentElement.style.setProperty("--background-color", "white");
+    document.documentElement.style.setProperty("--text-color", "black");
+    isDark = false;
   } else {
-    document.documentElement.style.setProperty("--background-color", "black"),
-      document.documentElement.style.setProperty("--text-color", "white");
+    document.documentElement.style.setProperty("--background-color", "black");
+    document.documentElement.style.setProperty("--text-color", "white");
+    isDark = true;
   }
   
 });
